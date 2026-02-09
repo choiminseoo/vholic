@@ -15,11 +15,26 @@
       <p class="subtitle">Bundang Volleyball Crew</p>
     </header>
 
-    <!-- 게스트 현황 -->
+    <!-- 2026 이벤트 소개 -->
     <section class="card highlight">
       <h2>2026 EVENT🎉</h2>
-      <p class="status open">게스트 무제한 참가</p>
-      <!-- 마감 시: class="status closed" -->
+      <p class="status open">2월 ~ 3월 한정 게스트비 무료 이벤트 진행중!!</p>
+      <ul class="info-list">
+        <li>✔ 금요일 / 일요일</li>
+        <li>✔ 19:00 – 22:00 (금요일) / 14:00 – 18:00 (일요일)</li>
+        <li>✔ 남/여 각 3명씩 (인원 미충족시 성별 무관 5명)</li>
+      </ul>
+    </section>
+
+    <!-- 게스트 현황 -->
+    <section class="card highlight">
+      <h2>게스트 현황</h2>
+      <div class="calendar-header">
+        <button id="prevMonth">◀</button>
+        <span id="monthTitle"></span>
+        <button id="nextMonth">▶</button>
+      </div>
+      <div id="calendar"></div>
     </section>
 
     <!-- 기본 정보 -->
@@ -47,9 +62,10 @@
     <!-- 문의 -->
     <footer class="footer">
       <p>게스트 참여 문의는</p>
-      <p class="dm">Instagram DM</p>
+      <p class="dm">Instagram</p>
     </footer>
 
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

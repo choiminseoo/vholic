@@ -66,7 +66,7 @@ body {
   background-color: #fff8f3;
 }
 
-/* 상태 텍스트 */
+/* 상태 텍스트 (기존) */
 .status {
   font-size: 16px;
   font-weight: 700;
@@ -78,6 +78,67 @@ body {
 
 .status.closed {
   color: #999;
+}
+
+/* ========================= */
+/* 📅 게스트 달력 전용 CSS */
+/* ========================= */
+
+.calendar {
+  margin-top: 12px;
+}
+
+.calendar h3 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.day {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  min-height: 60px;
+  padding: 6px 4px;
+  font-size: 12px;
+  background: #fff;
+}
+
+.day.head {
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  text-align: center;
+  color: #777;
+  min-height: auto;
+}
+
+.day .date {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+/* 달력 상태 */
+.day.open {
+  background-color: #fff1e6;
+  border-color: #ff6b00;
+}
+
+.day.closed {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.day .status {
+  font-size: 11px;
+  font-weight: 700;
 }
 
 /* 푸터 */
@@ -96,3 +157,26 @@ body {
   font-weight: 700;
   color: #ff6b00;
 }
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  border: none;
+  background: #ff6b00;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calendar-header span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
