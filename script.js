@@ -10,7 +10,7 @@ let currentYear = new Date().getFullYear();
 const guestData = {
   "2026-2-20": { male: "full", female: "full" },
   "2026-2-22": { male: "0/3", female: "0/3" },
-  "2026-2-27": { male: "0/3", female: "0/3" },
+  "2026-2-27": { male: "1/3", female: "1/3" },
   "2026-3-6": { male: "0/3", female: "1/3" }
 };
 
