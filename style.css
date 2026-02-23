@@ -1,5 +1,5 @@
 /* ========================= */
-/* 기본 설정 #4b032b / #2f2f2f / #1f2643*/
+/* 기본 설정 #4b032b / #2f2f2f / #1f2643 */
 /* ========================= */
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
@@ -58,8 +58,6 @@ body {
   margin-top: 6px;
 }
 
-
-
 /* ========================= */
 /* 카드 공통 */
 /* ========================= */
@@ -109,7 +107,7 @@ body {
 }
 
 /* ========================= */
-/* 📅 게스트 달력 전용 */
+/* 📅 게스트 달력 */
 /* ========================= */
 
 .calendar-header {
@@ -121,7 +119,7 @@ body {
 
 .calendar-header button {
   border: none;
-  background: #4b032b;/*#ff6b00;*/
+  background: #4b032b;
   color: #fff;
   font-size: 14px;
   padding: 6px 10px;
@@ -133,6 +131,23 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+
+/* ===== 요일 헤더 ===== */
+
+.calendar-week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 6px;
+}
+
+.week-day {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #777;
+}
+
+/* ===== 범례 ===== */
 
 .calendar-legend {
   display: flex;
@@ -156,7 +171,7 @@ body {
   font-weight: 700;
 }
 
-/* 달력 그리드 */
+/* ===== 달력 그리드 ===== */
 
 .calendar {
   display: grid;
@@ -172,20 +187,29 @@ body {
   text-align: center;
   height: 60px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+}
+
+/* 날짜 숫자 */
 .calendar-day .date {
   font-weight: 700;
   font-size: 13px;
+  margin-bottom: 2px;
 }
 
-.day.today,
+/* 오늘 날짜 테두리 */
 .calendar-day.today {
   border: 2px solid #4b032b;
 }
 
-
-/* 남/여 상태 표시 */
+/* ===== 남/여 상태 표시 ===== */
 
 .status-male {
   color: #2049af;
@@ -200,6 +224,14 @@ body {
 }
 
 .status-closed {
+  color: #999;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* ===== 원하는 텍스트 표시 (운동X 등) ===== */
+
+.status-note {
   color: #999;
   font-weight: 700;
   font-size: 11px;
