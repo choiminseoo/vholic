@@ -8,11 +8,7 @@ let currentYear = new Date().getFullYear();
 
 /* ===== 게스트 데이터 (여기만 수정하면 됨) ===== */
 const guestData = {
-  "2026-2-27": { text: "운동X" },
-  "2026-3-1": { text: "운동X" },
-  "2026-3-6": { male: "full", female: "1/3" },
-  "2026-3-8": { male: "2/3", female: "1/3" },
-  "2026-3-13": { male: "0/3", female: "0/3" },
+  "2026-3-13": { male: "1/3", female: "0/3" },
   "2026-3-15": { male: "0/3", female: "full" },
   "2026-3-20": { male: "0/3", female: "0/3" },
   "2026-3-22": { male: "0/3", female: "0/3" },
